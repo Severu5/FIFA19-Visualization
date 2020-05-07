@@ -113,12 +113,12 @@
     flex-direction column
     justify-content flex-end
   .fifalist 
-    background-color rgba(32, 32, 35, 0.5)
+    background-color transparent
     border none
     color #fff
     height 45%
     overflow hidden
-    margin-bottom 10px
+    margin-bottom 30px
     .content
       height 30vh
       overflow hidden

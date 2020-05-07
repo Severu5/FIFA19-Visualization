@@ -16,9 +16,9 @@
         <div class="item four active" @click="clickChart('4')" style="transform: translate(43.7%, 0) scale(1)">
           <FIFAWORLD></FIFAWORLD>
         </div>
-    </div>
-    <div class="datalist">
-      <FIFALIST></FIFALIST>
+        <div class="datalist item" style="transform: translate(0%, 0) scale(1)">
+          <FIFALIST></FIFALIST>
+        </div>
     </div>
   </div>
 </template>
@@ -78,7 +78,7 @@ export default {
 <style lang="stylus" scoped>
 *
   box-sizing: border-box;
-.fifaworld,.fifaage,.fifaoverall,.fifaposition
+.fifaworld,.fifaage,.fifaoverall,.fifaposition,.container
   height 100%!important
   width 100%!important
   background none!important
@@ -117,9 +117,9 @@ export default {
   text-align center
   color #ffffff
   padding 20px 0
-.datalist
+.datalist.item
   position absolute
-  left 80%
-  right 15px
-  top 80px
+  margin-left 0
+  right 10px
+  width 20%
 </style>

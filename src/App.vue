@@ -1,28 +1,24 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<div class="mainApp">
+  <Dashboard />
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import axios from 'axios'
+import Dashboard from 'components/dashboard/Dashboard'
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
+    Dashboard
   }
 }
-</script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+</script>
+<style lang="stylus" rel="stylesheet/stylus">
+@import url('./assets/css/reset.css');
+.mainApp
+  position absolute
+  height 100%
+  width 100%
 </style>

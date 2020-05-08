@@ -10,6 +10,11 @@ module.exports = {
         'network': '@/network',
         'views': '@/views',
       }
+    },
+    externals: {
+      'vue': 'Vue',
+      'echarts': 'echarts'
     }
   },
+  
 }

@@ -95,7 +95,7 @@
       Card
     },
     created() {
-      axios.get('/data/data.json').then(res => {
+      axios.get('./data/data.json').then(res => {
         this.list = res.data.obverall_sort;
         this.team = res.data.b;
         this.teamlength = Object.keys(this.team.Age).length;

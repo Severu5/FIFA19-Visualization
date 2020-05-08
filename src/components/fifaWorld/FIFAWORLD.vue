@@ -22,11 +22,11 @@
     },
     methods: {
       getWorld() {
-        axios.get('/data/data.json').then(res => {
+        axios.get('./data/data.json').then(res => {
           this.data = res.data.world;
           this.keys = Object.keys(this.data);
         })
-        axios.get('/data/World.json').then(res => {
+        axios.get('./data/World.json').then(res => {
           let namemap = res.data.namemap;
           let dataArr = res.data.dataArr;
           this.data = this.dataFormat(this.data, namemap);

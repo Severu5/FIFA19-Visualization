@@ -11,7 +11,7 @@
   export default {
     methods: {
       getMulCol() {
-        axios.get('/data/data.json').then(res => {
+        axios.get('./data/data.json').then(res => {
           let data = res.data.overall;
           this.drawChart(data);
         })
